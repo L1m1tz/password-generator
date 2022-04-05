@@ -1,7 +1,7 @@
 let passwordEl = document.getElementById("password-el");
 let passwords = [];
 
-function generateRandomLetter() {
+function generateRandom() {
   let password = "";
   let characters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -11,9 +11,12 @@ function generateRandomLetter() {
   }
   return password;
 }
-console.log(generateRandomLetter());
 
-function generatePassword() {
-  console.log("this works")
-  
+function generatePassword(){
+    for(let i = 0; i < 4; i++){
+    passwords[i] = generateRandom()
 }
+    document.getElementById('password-el').innerHTML =
+    '<li>' + passwords.join('</li><li>') + '</li>'
+}
+
