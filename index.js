@@ -15,4 +15,5 @@ console.log(generateRandomLetter());
 
 function generatePassword() {
   console.log("this works")
+  
 }
